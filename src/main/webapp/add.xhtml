@@ -8,25 +8,25 @@
 	xmlns:rich="http://richfaces.org/rich">
 
 	<ui:define name="content">
-		<h:form id="personForm">
+		<h:form id="dilerForm">
 			<h:panelGrid columns="2">
 
-				<h:outputText value="#{msg.personFirstNameLabel}" />
-				<h:inputText id="firstName" value="#{personBean.person.firstName}"
+				<h:outputText value="Pseudonim" />
+				<h:inputText id="przykrywka" value="#{kurierBean.diler.przykrywka}"
 					required="#{true}" />
 
-				<h:outputText value="#{msg.personPinLabel}" />
-				<h:inputText id="pin" value="#{personBean.person.pin}" />
+				<h:outputText value="Numer telefonu" />
+				<h:inputText id="numerTel" value="#{kurierBean.diler.numerTel}" />
 
-				<h:outputText value="Registration date" />
-				<rich:calendar value="#{personBean.person.registrationDate}"
+				<h:outputText value="Data zwerbowania do interesu" />
+				<rich:calendar value="#{kurierBean.diler.werbunek}"
 					id="calendar" datePattern="dd.MM.yyyy" showApplyButton="#{true}"
 					style="width:200px">
 				</rich:calendar>
 			</h:panelGrid>
 
-			<h:commandButton value="#{msg.personFormOKButton}"
-				action="#{personBean.addPerson}" />
+			<h:commandButton value="OK"
+				action="#{kurierBean.addDiler}" />
 
 			<h:panelGrid>
 				<h:messages for="" />

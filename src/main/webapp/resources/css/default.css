@@ -1,18 +1,21 @@
 body {
    margin: 0;
    padding: 0;
-   background-color:  lightGray;
+   background-image: url(http://fc02.deviantart.net/fs70/i/2011/336/e/6/astral_projection_by_preritjain-d4hx8tq.jpg);
    font-family: Verdana, sans-serif;
-   font-size: 0.9em;
+   font-size: 1.2em;
 }
 
 .heading {
   padding: 10px;
-  background: #FFFFFF;
-  border: 1px solid blue;
-  font-size: 1.4em;
+  background-image: url(http://shift.is/wp-content/uploads/2013/04/921123_343469169109926_739278234_o.jpg);
+  opaticty: 0.5;
+  background-size: 300px 50px;
+  border: 3px black;
+  font-size: 1.9em;
   font-style: italic;
   font-family: Verdana;
+  color: yellow;
   text-align: center;
   height: 50px;
 }
@@ -26,20 +29,22 @@ body {
   padding-right: 20px;
   padding-left: 20px;
   padding-bottom: 20px;
-  border: thin solid blue;
+  border: thin black;
   position: absolute;
   left: 10px;
   height: 80%;
   width: 200px;
-  background: #FFFFFF;
+  background: LightSeaGreen;
   top: 90px;
+  font-size: 1.1em;
+  font-color: red;
 }
 
 .content {
   padding-right: 20px;
   padding-left: 20px;
   padding-bottom: 20px;
-  border: thin solid blue;
+  border: thin black;
   background: #FFFFFF;	
   position:absolute;
   left: 225px; 

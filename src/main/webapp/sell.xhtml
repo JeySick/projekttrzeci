@@ -8,25 +8,25 @@
 	xmlns:rich="http://richfaces.org/rich">
 
 	<ui:define name="content">
-		<h:form id="personForm">
+		<h:form id="dilerForm">
 			<h:panelGrid columns="2">
 
-				<h:outputText value=" Person " />
-				<h:selectOneMenu value="#{saleBean.personId}">
-					<f:selectItems value="#{saleBean.allPersons}" var="person"
-						itemValue="#{person.id}" itemLabel="#{person.firstName}" />
+				<h:outputText value=" Diler " />
+				<h:selectOneMenu value="#{dawkaBean.dilerId}">
+					<f:selectItems value="#{dawkaBean.allDiler}" var="diler"
+						itemValue="#{diler.id}" itemLabel="#{diler.przykrywka}" />
 				</h:selectOneMenu>
 
-				<h:outputText value=" Car" />
-				<h:selectOneMenu value="#{saleBean.carId}">
-					<f:selectItems value="#{saleBean.availableCars}" var="car"
-						itemValue="#{car.id}" itemLabel="#{car.make} #{car.model}" />
+				<h:outputText value=" Narkotyk" />
+				<h:selectOneMenu value="#{dawkaBean.narkotykId}">
+					<f:selectItems value="#{dawkaBean.availableNarkotyki}" var="narkotyk"
+						itemValue="#{narkotyk.id}" itemLabel="#{narkotyk.twarde} #{narkotyk.nazwa}" />
 				</h:selectOneMenu>
 
 
 			</h:panelGrid>
 
-			<h:commandButton value="Sell" action="#{saleBean.sellCar}" />
+			<h:commandButton value="Opchnij" action="#{dawkaBean.sellNarkotyk}" />
 
 			<h:panelGrid>
 				<h:messages id="messages" showDetail="#{true}"
