@@ -20,10 +20,10 @@ public class ManagerDilowania {
 	@PersistenceContext
 	EntityManager em;
 
-	public void sellNarkotyk(Long dilerId, Long carId) {
+	public void sellNarkotyk(Long dilerId, Long narkortykId) {
 
 		Diler diler = em.find(Diler.class, dilerId);
-		Narkotyk narkotyk = em.find(Narkotyk.class, dilerId);
+		Narkotyk narkotyk = em.find(Narkotyk.class, narkortykId);
 		narkotyk.setSold(true);
 
 		diler.getNarkotyki().add(narkotyk);

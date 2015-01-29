@@ -8,19 +8,19 @@
 	<ui:define name="content">
 		<h:form>
 			<h:dataTable value="#{kurierBean.allDiler}" var="item">
-				<f:facet name="header">#{msg.personAllLabel}</f:facet>
+				<f:facet name="header">Nasi Obecni Dilerzy:</f:facet>
 				<h:column>
-					<f:facet name="header">#{msg.personFirstNameLabel}</f:facet>
+					<f:facet name="header">Pseudonim</f:facet>
 					<h:outputText value="#{item.przykrywka}" />
 				</h:column>
 
 				<h:column>
-					<f:facet name="header">#{msg.personPinLabel}</f:facet>
+					<f:facet name="header">DrugFon</f:facet>
 					<h:outputText value="#{item.numerTel}" />
 				</h:column>
 
 				<h:column>
-					<f:facet name="header">Usun go:</f:facet>
+					<f:facet name="header">Usun</f:facet>
 					<h:commandLink value="#{msg.actionDelete}"
 						action="#{kurierBean.deleteDiler}" />
 					<h:commandLink value=" Details " action="#{kurierBean.showDetails}"/>
